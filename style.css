@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #E9E2D9;
 }
 
@@ -18,24 +18,43 @@ body {
     height: 100vh;
 
     .nome-produto {
-        color: #1D4ED8;
-        margin-bottom: 40px;
+        background: linear-gradient(to right, #1D4ED8, oklch(12.9% 0.042 264.695));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
         font-size: 56px;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
+
     .descricao-produto {
+        margin-bottom: 20px;
         color: #18181B;
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
+
+        .olympikus {
+            font-weight: bold;
+            color: oklch(12.9% 0.042 264.695);
+        }
+
+        .corre-pace {
+            font-weight: bold;
+            background: linear-gradient(to right, #1D4ED8, oklch(12.9% 0.042 264.695));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     }
 
     .img-produto {
         background-color: oklch(55.1% 0.027 264.364);
         box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.3);
-        
+        border-radius: 20px;
         margin: 30px 0;
         width: 50%;
+
         img {
             width: 100%;
             height: auto;
@@ -43,14 +62,21 @@ body {
     }
 
     .button-container {
-        background-color: #DBEAFE;
+        background-color: #1D4ED8;
+        box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.3);
         padding: 20px;
         border: 2px solid #1E3A8A;
         border-radius: 20px;
+
         a {
             text-decoration: none;
-            color: #1E3A8A;
-            font-weight: bold;
+            color: #E9E2D9;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            opacity: 0.8;
+        }
+
+        a:hover {
+            opacity: 1;
         }
     }
 }
